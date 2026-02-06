@@ -68,9 +68,11 @@ This allows us to find the Mimikatz detection log under the alerts and confirm t
 ### 4. Shuffle Automation Set up
 <img width="1582" height="954" alt="Shuffle" src="https://github.com/user-attachments/assets/1313b66b-df25-4bc6-89ab-e20fa3da85a4" />
 <img width="1916" height="915" alt="Hive-Alert" src="https://github.com/user-attachments/assets/7aebf421-d050-4f00-8c68-86e62d99b2de" />
+
 - The Shuffle webhook's API was integrated into the Wazuh manager's ossec.conf file in order to send the alerts to Shuffle for the specific rule we specified earlier.
 - A SHA-256 hash is then extracted from the log and ran into Virustotal, our OSINT provider for this project.
 - After enriching the IOC with Virustotal, the data is parsed to an email sent to a SOC analyst and also a case is created in TheHive for an example user in the organization.
+
 
 
 
